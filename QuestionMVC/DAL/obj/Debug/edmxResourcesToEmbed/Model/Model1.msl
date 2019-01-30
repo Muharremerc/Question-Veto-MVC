@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QuestionModelStoreContainer" CdmEntityContainer="QuestionEntities">
+    <EntitySetMapping Name="Contents">
+      <EntityTypeMapping TypeName="QuestionModel.Content">
+        <MappingFragment StoreEntitySet="Content">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CallingId" ColumnName="CallingId" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Options">
+      <EntityTypeMapping TypeName="QuestionModel.Option">
+        <MappingFragment StoreEntitySet="Option">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OptionDetails" ColumnName="OptionDetails" />
+          <ScalarProperty Name="QuestionId" ColumnName="QuestionId" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Questions">
+      <EntityTypeMapping TypeName="QuestionModel.Question">
+        <MappingFragment StoreEntitySet="Question">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Question1" ColumnName="Question" />
+          <ScalarProperty Name="ContentId" ColumnName="ContentId" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserContents">
+      <EntityTypeMapping TypeName="QuestionModel.UserContent">
+        <MappingFragment StoreEntitySet="UserContent">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ContentId" ColumnName="ContentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserQuestionOptions">
+      <EntityTypeMapping TypeName="QuestionModel.UserQuestionOption">
+        <MappingFragment StoreEntitySet="UserQuestionOption">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OptionId" ColumnName="OptionId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="QuestionId" ColumnName="QuestionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Userrs">
+      <EntityTypeMapping TypeName="QuestionModel.Userr">
+        <MappingFragment StoreEntitySet="Userr">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vetoes">
+      <EntityTypeMapping TypeName="QuestionModel.Veto">
+        <MappingFragment StoreEntitySet="Veto">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="ContentId" ColumnName="ContentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,15 @@
+﻿@model  DAL.Model.Content
+<div class="form-panel">
+    <h4 class="mb"><i class="fa fa-angle-right"></i> Checkboxes, Radios &amp; Selects</h4>
+    @foreach (var item in Model.Vetoes)
+    {
+           <div class="radio">
+                <label>
+                    <input type="radio" name="Vıd" id="Vıd" value="@item.Id" onclick="Veto(this.value)" />
+                    @item.Name
+                </label>
+            </div>
+        
+    }
+</div>
+   

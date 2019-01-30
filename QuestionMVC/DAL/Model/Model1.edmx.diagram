@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c4f5c23c8eb541599a857d0ed9068678" Name="Diagram1">
+        <EntityTypeShape EntityType="QuestionModel.Content" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionModel.Option" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionModel.Question" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionModel.UserContent" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionModel.UserQuestionOption" Width="1.5" PointX="7.5" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionModel.Userr" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionModel.Veto" Width="1.5" PointX="2.75" PointY="6.875" IsExpanded="true" />
+        <AssociationConnector Association="QuestionModel.FK_Question_Content" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionModel.FK_UserContent_Content" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionModel.FK_Option_Question" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionModel.FK_UserQuestionOption_Option" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionModel.FK_UserQuestionOption_Question" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionModel.FK_UserContent_Userr" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionModel.FK_UserQuestionOption_Userr" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionModel.FK_Veto_Content" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

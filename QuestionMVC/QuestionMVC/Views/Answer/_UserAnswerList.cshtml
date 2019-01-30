@@ -1,0 +1,56 @@
+﻿@model List<QuestionMVC.Models.UserAnswerModel.UserAnswer>
+@*<table border="1">
+        @foreach (var item in Model)
+        {
+                <tr>
+                    <td colspan="2">@item.User.Name</td>
+                </tr>
+
+            foreach (var item2 in item.Answers)
+            {
+                <tr>
+                    <td>@item2.Question</td>
+                    <td>@item2.Result</td>
+                </tr>
+
+            }
+
+        }
+    </table>*@
+  
+
+<div class="row mt">
+    <div class="col-lg-12">
+        <div class="content-panel">
+            <h4><i class="fa fa-angle-right"></i> Responsive Table</h4>
+            <section id="unseen">
+                @foreach (var item in Model)
+                {
+                    <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                            <tr>
+                                <th >@item.User.Name</th>
+                                <td colspan="2">@item.Content</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item2 in item.Answers)
+                            {
+                            <tr>
+                                <td>@item2.Id</td>
+                                <td>@item2.Question</td>
+                                <td class="numeric" align="left">@item2.Result</td>
+                            </tr>
+                            }
+                            
+
+                        </tbody>
+                    </table>
+                }
+
+            </section>
+        </div>
+        <!-- /content-panel -->
+    </div>
+    <!-- /col-lg-4 -->
+</div>

@@ -1,0 +1,128 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h3><i class="fa fa-angle-right"></i> Content</h3>
+
+<div class="form-panel">
+    <form class="form-horizontal style-form" method="get">
+        <div class="form-group">
+            <label class="col-sm-1 col-sm-offset-0 control-label">Content Title</label>
+            <div class="col-sm-3">
+                <input type="text" id="cname" name="cname" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-1 col-sm-offset-0 control-label">Password</label>
+            <div class="col-sm-2">
+                <input type="text" id="cpassword" name="cpassword" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+
+            <div class="col-sm-10">
+                <a href="javascript:addContent()" class="btn btn-theme">Add</a>
+                <a href="javascript:FinishContent()" class="btn btn-theme">Finish</a>
+            </div>
+        </div>
+    </form>
+</div>
+<div id="veto">
+
+</div>
+<script>
+function addContent()
+    {
+        var data = {
+            name: $('#cname').val(),
+            password: $('#cpassword').val()
+
+        };
+
+            if (data.name != "" && data.password != "")
+            {
+
+                $.ajax({
+                    url: '@Url.Action("getAddVetoView", "Veto")',
+                    dataType: "HTML",
+                    type: "POST",
+                    contentType: 'application/json',
+                    data: JSON.stringify(data),
+                    success: function (data) {
+                        $("#veto").html(null);
+                        $("#veto").html(data);
+                    },
+                    error: function (hata, ajaxOptions, thrownError) {
+                    alert(hata.status);
+                    alert(thrownError);
+                    alert(hata.responseText);
+                    }
+                    });
+            }
+                else
+                {
+                alert("null value");
+                }
+    }
+
+
+    function addVetoOptions()
+    {
+        var data = {
+            name: $('#vname').val()
+
+        };
+
+            if (data.name != "")
+            {
+
+                $.ajax({
+                    url: '@Url.Action("addVetoOption", "Veto")',
+                    dataType: "HTML",
+                    type: "POST",
+                    contentType: 'application/json',
+                    data: JSON.stringify(data),
+                    success: function (data) {
+                        $("#optionList").html(null);
+                        $("#optionList").html(data);
+                    },
+                    error: function (hata, ajaxOptions, thrownError) {
+                    alert(hata.status);
+                    alert(thrownError);
+                    alert(hata.responseText);
+                    }
+                    });
+            }
+                else
+                {
+                alert("null value");
+                }
+    }
+
+
+    function FinishContent() {
+
+       
+
+         $.ajax({
+            url: '@Url.Action("finishContent", "Home")',
+            dataType: "JSON",
+            type: "POST",
+            contentType: 'application/json',
+             success: function (data) {
+                 alert(data);
+                window.location.assign("../Home");
+                
+            },
+             error: function (hata, ajaxOptions, thrownError) {
+                 alert(hata.status);
+                 alert(thrownError);
+                 alert(hata.responseText);
+             }
+         });
+       
+
+    }
+
+</script>

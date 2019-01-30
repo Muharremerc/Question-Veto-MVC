@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "UsersAnswers";
+}
+
+<h3><i class="fa fa-angle-right"></i> Content</h3>
+
+<div class="form-panel">
+    <form class="form-horizontal style-form" method="get">
+        <div class="form-group">
+            <label class="col-sm-1 col-sm-offset-0 control-label">ContentId</label>
+            <div class="col-sm-3">
+                <input type="text" id="cId" name="cId" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-1 col-sm-offset-0 control-label">Password</label>
+            <div class="col-sm-3">
+                <input type="text" id="password" name="password" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+
+            <div class="col-sm-10">
+                <a href="javascript:getAllUsersAnswer()" class="btn btn-theme">Users Answers</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div id="abc">
+
+</div>
+<script>
+    function getAllUsersAnswer()
+    {
+
+        var data = {
+            id: $('#cId').val(),
+            password: $('#password').val()
+
+        };
+
+            $.ajax({
+                url: '@Url.Action("getAlluserAnswer", "Answer")',
+                dataType: "HTML",
+                type: "POST",
+                contentType: 'application/json',
+                data: JSON.stringify(data),
+                success: function (data) {
+                    $("#abc").html(null);
+                    $("#abc").html(data);
+                },
+                error: function (hata, ajaxOptions, thrownError) {
+                alert(hata.status);
+                alert(thrownError);
+                alert(hata.responseText);
+                }
+                });
+                }
+</script>
+

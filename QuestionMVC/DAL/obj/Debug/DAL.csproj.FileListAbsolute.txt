@@ -1,0 +1,24 @@
+C:\Users\muhar\source\repos\QuestionMVC\DAL\bin\Debug\DAL.dll.config
+C:\Users\muhar\source\repos\QuestionMVC\DAL\bin\Debug\DAL.dll
+C:\Users\muhar\source\repos\QuestionMVC\DAL\bin\Debug\DAL.pdb
+C:\Users\muhar\source\repos\QuestionMVC\DAL\bin\Debug\EntityFramework.dll
+C:\Users\muhar\source\repos\QuestionMVC\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\muhar\source\repos\QuestionMVC\DAL\bin\Debug\EntityFramework.xml
+C:\Users\muhar\source\repos\QuestionMVC\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\muhar\source\repos\QuestionMVC\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\muhar\source\repos\QuestionMVC\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\muhar\source\repos\QuestionMVC\DAL\obj\Debug\DAL.dll
+C:\Users\muhar\source\repos\QuestionMVC\DAL\obj\Debug\DAL.pdb
+C:\Users\muhar\source\repos\QuestionMVC\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+F:\MVC QuestionMVC\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+F:\MVC QuestionMVC\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+F:\MVC QuestionMVC\DAL\obj\Debug\DAL.dll
+F:\MVC QuestionMVC\DAL\obj\Debug\DAL.pdb
+F:\MVC QuestionMVC\DAL\bin\Debug\DAL.dll.config
+F:\MVC QuestionMVC\DAL\bin\Debug\DAL.dll
+F:\MVC QuestionMVC\DAL\bin\Debug\DAL.pdb
+F:\MVC QuestionMVC\DAL\bin\Debug\EntityFramework.dll
+F:\MVC QuestionMVC\DAL\bin\Debug\EntityFramework.SqlServer.dll
+F:\MVC QuestionMVC\DAL\bin\Debug\EntityFramework.xml
+F:\MVC QuestionMVC\DAL\bin\Debug\EntityFramework.SqlServer.xml
+F:\MVC QuestionMVC\DAL\obj\Debug\DAL.csproj.CopyComplete

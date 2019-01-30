@@ -1,0 +1,210 @@
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\ApplicationInsights.config
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\QuestionMVC.dll.config
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\QuestionMVC.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\QuestionMVC.pdb
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\csc.exe
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\csc.exe.config
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\csc.rsp
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\csi.exe
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\csi.exe.config
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\csi.rsp
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\System.AppContext.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\System.Console.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\System.IO.Compression.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\System.IO.Pipes.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\System.Security.Claims.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\System.ValueTuple.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\System.Xml.XPath.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\vbc.exe
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\vbc.exe.config
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\vbc.rsp
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\VBCSCompiler.exe
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\Antlr3.Runtime.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\Microsoft.AI.Web.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\Microsoft.ApplicationInsights.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\Newtonsoft.Json.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\System.Web.Helpers.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\System.Web.Mvc.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\System.Web.Optimization.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\System.Web.Razor.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\System.Web.WebPages.Deployment.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\System.Web.WebPages.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\System.Web.WebPages.Razor.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\WebGrease.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\System.Web.Helpers.xml
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\System.Web.Mvc.xml
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\System.Web.Optimization.xml
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\System.Web.Razor.xml
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\System.Web.WebPages.xml
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\System.Web.WebPages.Deployment.xml
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\System.Web.WebPages.Razor.xml
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\Newtonsoft.Json.xml
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\Antlr3.Runtime.pdb
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\Microsoft.AI.Web.xml
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\tr\System.Web.Optimization.resources.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\tr\System.Web.Razor.resources.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\tr\System.Web.WebPages.resources.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\tr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\tr\System.Web.WebPages.Razor.resources.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\obj\Debug\QuestionMVC.csprojAssemblyReference.cache
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\obj\Debug\QuestionMVC.csproj.CoreCompileInputs.cache
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\obj\Debug\QuestionMVC.csproj.CopyComplete
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\obj\Debug\QuestionMVC.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\obj\Debug\QuestionMVC.pdb
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\DAL.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\EntityFramework.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\EntityFramework.SqlServer.dll
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\DAL.pdb
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\DAL.dll.config
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\EntityFramework.xml
+C:\Users\muhar\source\repos\QuestionMVC\QuestionMVC\bin\EntityFramework.SqlServer.xml
+F:\MVC QuestionMVC\QuestionMVC\bin\ApplicationInsights.config
+F:\MVC QuestionMVC\QuestionMVC\bin\QuestionMVC.dll.config
+F:\MVC QuestionMVC\QuestionMVC\bin\QuestionMVC.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\QuestionMVC.pdb
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\csc.exe
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\csc.exe.config
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\csc.rsp
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\csi.exe
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\csi.exe.config
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\csi.rsp
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\Microsoft.Managed.Core.targets
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\System.AppContext.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\System.Collections.Immutable.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\System.Console.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\System.IO.Compression.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\System.IO.FileSystem.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\System.IO.Pipes.AccessControl.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\System.IO.Pipes.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\System.Reflection.Metadata.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\System.Security.AccessControl.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\System.Security.Claims.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\System.Security.Principal.Windows.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\System.ValueTuple.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\System.Xml.XmlDocument.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\System.Xml.XPath.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\vbc.exe
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\vbc.exe.config
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\vbc.rsp
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\VBCSCompiler.exe
+F:\MVC QuestionMVC\QuestionMVC\bin\roslyn\VBCSCompiler.exe.config
+F:\MVC QuestionMVC\QuestionMVC\bin\Antlr3.Runtime.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\DAL.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\EntityFramework.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\EntityFramework.SqlServer.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\Microsoft.AI.Agent.Intercept.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\Microsoft.AI.DependencyCollector.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\Microsoft.AI.Web.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\Microsoft.AI.WindowsServer.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\Microsoft.ApplicationInsights.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\Microsoft.Web.Infrastructure.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\Newtonsoft.Json.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\System.Diagnostics.DiagnosticSource.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\System.Web.Helpers.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\System.Web.Mvc.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\System.Web.Optimization.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\System.Web.Razor.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\System.Web.WebPages.Deployment.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\System.Web.WebPages.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\System.Web.WebPages.Razor.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\WebGrease.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\DAL.pdb
+F:\MVC QuestionMVC\QuestionMVC\bin\DAL.dll.config
+F:\MVC QuestionMVC\QuestionMVC\bin\EntityFramework.xml
+F:\MVC QuestionMVC\QuestionMVC\bin\EntityFramework.SqlServer.xml
+F:\MVC QuestionMVC\QuestionMVC\bin\System.Web.Helpers.xml
+F:\MVC QuestionMVC\QuestionMVC\bin\System.Web.Mvc.xml
+F:\MVC QuestionMVC\QuestionMVC\bin\System.Web.Optimization.xml
+F:\MVC QuestionMVC\QuestionMVC\bin\System.Web.Razor.xml
+F:\MVC QuestionMVC\QuestionMVC\bin\System.Web.WebPages.xml
+F:\MVC QuestionMVC\QuestionMVC\bin\System.Web.WebPages.Deployment.xml
+F:\MVC QuestionMVC\QuestionMVC\bin\System.Web.WebPages.Razor.xml
+F:\MVC QuestionMVC\QuestionMVC\bin\Newtonsoft.Json.xml
+F:\MVC QuestionMVC\QuestionMVC\bin\Antlr3.Runtime.pdb
+F:\MVC QuestionMVC\QuestionMVC\bin\System.Diagnostics.DiagnosticSource.xml
+F:\MVC QuestionMVC\QuestionMVC\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+F:\MVC QuestionMVC\QuestionMVC\bin\Microsoft.AI.DependencyCollector.xml
+F:\MVC QuestionMVC\QuestionMVC\bin\Microsoft.AI.WindowsServer.xml
+F:\MVC QuestionMVC\QuestionMVC\bin\Microsoft.AI.Web.xml
+F:\MVC QuestionMVC\QuestionMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\MVC QuestionMVC\QuestionMVC\bin\tr\System.Web.Helpers.resources.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\tr\System.Web.Mvc.resources.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\tr\System.Web.Optimization.resources.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\tr\System.Web.Razor.resources.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\tr\System.Web.WebPages.resources.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\tr\System.Web.WebPages.Deployment.resources.dll
+F:\MVC QuestionMVC\QuestionMVC\bin\tr\System.Web.WebPages.Razor.resources.dll
+F:\MVC QuestionMVC\QuestionMVC\obj\Debug\QuestionMVC.csprojAssemblyReference.cache
+F:\MVC QuestionMVC\QuestionMVC\obj\Debug\QuestionMVC.csproj.CoreCompileInputs.cache
+F:\MVC QuestionMVC\QuestionMVC\obj\Debug\QuestionMVC.csproj.CopyComplete
+F:\MVC QuestionMVC\QuestionMVC\obj\Debug\QuestionMVC.dll
+F:\MVC QuestionMVC\QuestionMVC\obj\Debug\QuestionMVC.pdb

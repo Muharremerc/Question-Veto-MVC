@@ -1,0 +1,11 @@
+﻿@model List<DAL.Model.Veto>
+
+<div class="col-lg-6">
+    @foreach (var item in Model)
+    {<div class="content-panel">
+            <h4><i class="fa fa-angle-right"></i>@item.Name  @item.Count</h4>
+        </div>
+    }
+</div>
+    
+

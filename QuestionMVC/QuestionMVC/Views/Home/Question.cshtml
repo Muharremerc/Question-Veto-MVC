@@ -1,0 +1,245 @@
+﻿@{
+    ViewBag.Title = "Veto";
+}
+<h3><i class="fa fa-angle-right"></i> Content</h3>
+
+<div class="form-panel">
+    <form class="form-horizontal style-form" method="get">
+        <div class="form-group">
+            <label class="col-sm-1 col-sm-offset-0 control-label">Content Title</label>
+            <div class="col-sm-3">
+                <input type="text" id="cname" name="cname" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-1 col-sm-offset-0 control-label">Password</label>
+            <div class="col-sm-2">
+                <input type="text" id="cpassword" name="cpassword" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+
+            <div class="col-sm-10">
+                <a href="javascript:addContent()" class="btn btn-theme">Add</a>
+            </div>
+        </div>
+    </form>
+</div>
+<div id="getQues" name="getQues">
+
+</div>
+
+<div id="que" name="que">
+
+</div>
+
+<div id="queList" name="queList">
+
+</div>
+<script>
+    getQuestion();
+    getQuestionList();
+   function getQuestion()
+     {
+
+        $.ajax({
+            url: '@Url.Action("getAddQuestion", "Home")',
+            type: 'POST',
+            dataType: 'HTML',
+            data: {},
+            success: function (data) {
+                if (data == null)
+                {
+                    alert("Null");
+                }
+                else {
+
+                 $("#getQues").html(null);
+                    $("#getQues").html(data);
+                }
+
+             },
+             error: function (hata, ajaxOptions, thrownError) {
+                 alert(hata.status);
+                 alert(thrownError);
+                 alert(hata.responseText);
+             }
+            });
+    }
+
+    function addContent()
+    {
+        alert("a");
+        var data = {
+            name: $('#cname').val(),
+            password: $('#cpassword').val()
+
+        };
+
+        if (data.name != "" && data.password != "")
+        {
+
+            $.ajax({
+                url: '@Url.Action("AddContent", "Home")',
+                dataType: "JSON",
+                type: "POST",
+                contentType: 'application/json',
+                data: JSON.stringify(data),
+                success: function (data) {
+                    getQuestion();
+                },
+                error: function (hata, ajaxOptions, thrownError) {
+                    alert(hata.status);
+                    alert(thrownError);
+                    alert(hata.responseText);
+                }
+            });
+        }
+        else
+        {
+            alert("null value");
+        }
+    }
+
+    function addQuestion()
+     {
+       
+         var data = {
+             question: $('#qDetails').val(),
+             score: $('#score').val()
+
+        };
+        if (data.question != null && data.score != null)
+        {
+        $.ajax({
+            url: '@Url.Action("addQuestion", "Home")',
+            dataType: "JSON",
+            type: "POST",
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function (data) {
+                getQuestionList();
+            },
+             error: function (hata, ajaxOptions, thrownError) {
+                 alert(hata.status);
+                 alert(thrownError);
+                 alert(hata.responseText);
+             }
+         });
+        }
+        else {
+            alert("null value");
+        }
+    }
+
+    function getQuestionList()
+    {
+        
+       
+        $.ajax({
+            url: '@Url.Action("getQuestionListByContentId", "Home")',
+            type: 'POST',
+            dataType: 'HTML',
+                  success: function (data) {
+                      $("#queList").html(null);
+                      $("#queList").html(data);
+
+             },
+             error: function (hata, ajaxOptions, thrownError) {
+                 alert(hata.status);
+                 alert(thrownError);
+                 alert(hata.responseText);
+             }
+            });
+    }
+    function addOptionbyQuesitonId(Id)
+    {
+
+        var x = "#" + Id;
+         var data = {
+             option: $(x).val(),
+             id: Id,
+             answer: false
+
+        };
+        if (data.option != "" && data.id != null)
+        {
+        $.ajax({
+            url: '@Url.Action("addOption", "Home")',
+            dataType: "JSON",
+            type: "POST",
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function (data) {
+                getQuestionList();
+                
+            },
+             error: function (hata, ajaxOptions, thrownError) {
+                 alert(hata.status);
+                 alert(thrownError);
+                 alert(hata.responseText);
+             }
+         });
+        }
+        else {
+            alert("null value");
+        }
+
+    }
+
+    function selectOption(Id)
+    {
+
+         var data = {
+             id: Id
+        };
+        if (data.id != "")
+        {
+        $.ajax({
+            url: '@Url.Action("selectOption", "Home")',
+            dataType: "JSON",
+            type: "POST",
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function (data) {
+                
+                getQuestionList();
+            },
+             error: function (hata, ajaxOptions, thrownError) {
+                 alert(hata.status);
+                 alert(thrownError);
+                 alert(hata.responseText);
+             }
+         });
+        }
+        else {
+            alert("null value");
+        }
+
+    }
+
+    function FinishContent() {
+
+       
+
+         $.ajax({
+            url: '@Url.Action("finishContent", "Home")',
+            dataType: "JSON",
+            type: "POST",
+            contentType: 'application/json',
+            success: function (data) {
+                alert(data);
+                window.location.assign("../Home")
+                
+            },
+             error: function (hata, ajaxOptions, thrownError) {
+                 alert(hata.status);
+                 alert(thrownError);
+                 alert(hata.responseText);
+             }
+         });
+       
+
+    }
+
+</script>

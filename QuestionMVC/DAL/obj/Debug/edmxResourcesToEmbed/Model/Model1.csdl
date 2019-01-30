@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuestionModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Content">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CallingId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Questions" Relationship="Self.FK_Question_Content" FromRole="Content" ToRole="Question" />
+    <NavigationProperty Name="UserContents" Relationship="Self.FK_UserContent_Content" FromRole="Content" ToRole="UserContent" />
+    <NavigationProperty Name="Vetoes" Relationship="QuestionModel.FK_Veto_Content" FromRole="Content" ToRole="Veto" />
+  </EntityType>
+  <EntityType Name="Option">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OptionDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="QuestionId" Type="Int32" />
+    <Property Name="Answer" Type="Boolean" />
+    <NavigationProperty Name="Question" Relationship="Self.FK_Option_Question" FromRole="Option" ToRole="Question" />
+    <NavigationProperty Name="UserQuestionOptions" Relationship="Self.FK_UserQuestionOption_Option" FromRole="Option" ToRole="UserQuestionOption" />
+  </EntityType>
+  <EntityType Name="Question">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Question1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ContentId" Type="Int32" />
+    <Property Name="Score" Type="Int32" />
+    <NavigationProperty Name="Content" Relationship="Self.FK_Question_Content" FromRole="Question" ToRole="Content" />
+    <NavigationProperty Name="Options" Relationship="Self.FK_Option_Question" FromRole="Question" ToRole="Option" />
+    <NavigationProperty Name="UserQuestionOptions" Relationship="Self.FK_UserQuestionOption_Question" FromRole="Question" ToRole="UserQuestionOption" />
+  </EntityType>
+  <EntityType Name="UserContent">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="ContentId" Type="Int32" />
+    <NavigationProperty Name="Content" Relationship="Self.FK_UserContent_Content" FromRole="UserContent" ToRole="Content" />
+    <NavigationProperty Name="Userr" Relationship="Self.FK_UserContent_Userr" FromRole="UserContent" ToRole="Userr" />
+  </EntityType>
+  <EntityType Name="UserQuestionOption">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OptionId" Type="Int32" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="QuestionId" Type="Int32" />
+    <NavigationProperty Name="Option" Relationship="Self.FK_UserQuestionOption_Option" FromRole="UserQuestionOption" ToRole="Option" />
+    <NavigationProperty Name="Question" Relationship="Self.FK_UserQuestionOption_Question" FromRole="UserQuestionOption" ToRole="Question" />
+    <NavigationProperty Name="Userr" Relationship="Self.FK_UserQuestionOption_Userr" FromRole="UserQuestionOption" ToRole="Userr" />
+  </EntityType>
+  <EntityType Name="Userr">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="UserContents" Relationship="Self.FK_UserContent_Userr" FromRole="Userr" ToRole="UserContent" />
+    <NavigationProperty Name="UserQuestionOptions" Relationship="Self.FK_UserQuestionOption_Userr" FromRole="Userr" ToRole="UserQuestionOption" />
+  </EntityType>
+  <EntityType Name="Veto">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Count" Type="Int32" />
+    <Property Name="ContentId" Type="Int32" />
+    <NavigationProperty Name="Content" Relationship="QuestionModel.FK_Veto_Content" FromRole="Veto" ToRole="Content" />
+  </EntityType>
+  <Association Name="FK_Question_Content">
+    <End Role="Content" Type="Self.Content" Multiplicity="0..1" />
+    <End Role="Question" Type="Self.Question" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Content">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Question">
+        <PropertyRef Name="ContentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserContent_Content">
+    <End Role="Content" Type="Self.Content" Multiplicity="0..1" />
+    <End Role="UserContent" Type="Self.UserContent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Content">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserContent">
+        <PropertyRef Name="ContentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Option_Question">
+    <End Role="Question" Type="Self.Question" Multiplicity="0..1" />
+    <End Role="Option" Type="Self.Option" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Question">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Option">
+        <PropertyRef Name="QuestionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserQuestionOption_Option">
+    <End Role="Option" Type="Self.Option" Multiplicity="0..1" />
+    <End Role="UserQuestionOption" Type="Self.UserQuestionOption" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Option">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserQuestionOption">
+        <PropertyRef Name="OptionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserQuestionOption_Question">
+    <End Role="Question" Type="Self.Question" Multiplicity="0..1" />
+    <End Role="UserQuestionOption" Type="Self.UserQuestionOption" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Question">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserQuestionOption">
+        <PropertyRef Name="QuestionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserContent_Userr">
+    <End Role="Userr" Type="Self.Userr" Multiplicity="0..1" />
+    <End Role="UserContent" Type="Self.UserContent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Userr">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserContent">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserQuestionOption_Userr">
+    <End Role="Userr" Type="Self.Userr" Multiplicity="0..1" />
+    <End Role="UserQuestionOption" Type="Self.UserQuestionOption" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Userr">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserQuestionOption">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QuestionEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Contents" EntityType="Self.Content" />
+    <EntitySet Name="Options" EntityType="Self.Option" />
+    <EntitySet Name="Questions" EntityType="Self.Question" />
+    <EntitySet Name="UserContents" EntityType="Self.UserContent" />
+    <EntitySet Name="UserQuestionOptions" EntityType="Self.UserQuestionOption" />
+    <EntitySet Name="Userrs" EntityType="Self.Userr" />
+    <EntitySet Name="Vetoes" EntityType="Self.Veto" />
+    <AssociationSet Name="FK_Question_Content" Association="Self.FK_Question_Content">
+      <End Role="Content" EntitySet="Contents" />
+      <End Role="Question" EntitySet="Questions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserContent_Content" Association="Self.FK_UserContent_Content">
+      <End Role="Content" EntitySet="Contents" />
+      <End Role="UserContent" EntitySet="UserContents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Option_Question" Association="Self.FK_Option_Question">
+      <End Role="Question" EntitySet="Questions" />
+      <End Role="Option" EntitySet="Options" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserQuestionOption_Option" Association="Self.FK_UserQuestionOption_Option">
+      <End Role="Option" EntitySet="Options" />
+      <End Role="UserQuestionOption" EntitySet="UserQuestionOptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserQuestionOption_Question" Association="Self.FK_UserQuestionOption_Question">
+      <End Role="Question" EntitySet="Questions" />
+      <End Role="UserQuestionOption" EntitySet="UserQuestionOptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserContent_Userr" Association="Self.FK_UserContent_Userr">
+      <End Role="Userr" EntitySet="Userrs" />
+      <End Role="UserContent" EntitySet="UserContents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserQuestionOption_Userr" Association="Self.FK_UserQuestionOption_Userr">
+      <End Role="Userr" EntitySet="Userrs" />
+      <End Role="UserQuestionOption" EntitySet="UserQuestionOptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Veto_Content" Association="QuestionModel.FK_Veto_Content">
+      <End Role="Content" EntitySet="Contents" />
+      <End Role="Veto" EntitySet="Vetoes" />
+    </AssociationSet>
+  </EntityContainer>
+  <Association Name="FK_Veto_Content">
+    <End Type="QuestionModel.Content" Role="Content" Multiplicity="0..1" />
+    <End Type="QuestionModel.Veto" Role="Veto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Content">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Veto">
+        <PropertyRef Name="ContentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

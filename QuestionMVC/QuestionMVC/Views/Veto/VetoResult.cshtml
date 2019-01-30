@@ -1,0 +1,142 @@
+﻿
+@{
+    ViewBag.Title = "VetoResult";
+}
+
+<h3><i class="fa fa-angle-right"></i> Result </h3>
+
+<div class="form-panel">
+    <form class="form-horizontal style-form" method="get">
+        <div class="form-group">
+            <label class="col-sm-1 col-sm-offset-0 control-label">Content Title</label>
+            <div class="col-sm-3">
+                <input type="text" id="cId" name="cId" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-1 col-sm-offset-0 control-label">Password</label>
+            <div class="col-sm-2">
+                <input type="text" id="cpassword" name="cpassword" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+
+            <div class="col-sm-10">
+                <a href="javascript:AnswerVeto()" class="btn btn-theme">Get Result</a>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+<div id="vetoAnswer">
+
+
+</div>
+
+
+<script>
+
+    function AnswerVeto()
+    {
+        var data = {
+            id: $('#cId').val(),
+            password: $('#cpassword').val()
+
+        };
+
+        if (data.id != "" && data.password != "")
+        {
+
+            $.ajax({
+                url: '@Url.Action("AnswerVeto", "Veto")',
+                dataType: "HTML",
+                type: "POST",
+                contentType: 'application/json',
+                data: JSON.stringify(data),
+                success: function (data) {
+                    $("#vetoAnswer").html(null);
+                    $("#vetoAnswer").html(data);
+                },
+                error: function (hata, ajaxOptions, thrownError) {
+                    alert(hata.status);
+                    alert(thrownError);
+                    alert(hata.responseText);
+                }
+            });
+        }
+        else
+        {
+            alert("null value");
+        }
+    }
+
+    function Veto(Id)
+    {
+        var data = {
+            id: Id
+
+        };
+
+        if (data.id != "")
+        {
+
+            $.ajax({
+                url: '@Url.Action("VetoOp", "Veto")',
+                dataType: "JSON",
+                type: "POST",
+                contentType: 'application/json',
+                data: JSON.stringify(data),
+                success: function (data) {
+                    getR(data)
+                },
+                error: function (hata, ajaxOptions, thrownError) {
+                    alert(hata.status);
+                    alert(thrownError);
+                    alert(hata.responseText);
+                }
+            });
+        }
+        else
+        {
+            alert("null value");
+        }
+    }
+
+    function getR(Id)
+    {
+        var data = {
+            id: Id
+
+        };
+
+        if (data.id != "")
+        {
+
+            $.ajax({
+                url: '@Url.Action("getResult", "Veto")',
+                dataType: "HTML",
+                type: "POST",
+                contentType: 'application/json',
+                data: JSON.stringify(data),
+                success: function (data) {
+                    $("#vetoAnswer").html(null);
+                    $("#vetoAnswer").html(data);
+                },
+                error: function (hata, ajaxOptions, thrownError) {
+                    alert(hata.status);
+                    alert(thrownError);
+                    alert(hata.responseText);
+                }
+            });
+        }
+        else
+        {
+            alert("null value");
+        }
+    }
+
+
+
+</script>
+

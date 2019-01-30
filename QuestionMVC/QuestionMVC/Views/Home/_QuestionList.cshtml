@@ -1,0 +1,50 @@
+﻿@model List<QuestionMVC.Models.QuestionOptionListModel.QuestionListModel>
+
+@foreach (var item in Model)
+{
+<div class="form-panel">
+    <form class="cmxform form-horizontal style-form" id="commentForm" method="get" action="">
+        <h4 class="mb"><i class="fa fa-angle-right"></i> @item.Q.QuestionDetails</h4>
+
+        @foreach (var item2 in item.O)
+        {
+            if (item2.Answer == true)
+            {
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="R" id="R" value="@item2.Id" onclick="selectOption(this.value)" checked="checked"/>
+                        @item2.OptionDetails
+                    </label>
+                </div>
+            }
+            else
+            {
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="R" id="R" value="@item2.Id" onclick="selectOption(this.value)" />
+                        @item2.OptionDetails
+                    </label>
+                </div>
+
+            }
+
+        }
+
+        <div class="form-group">
+            <label class="col-sm-1 col-sm-offset-0 control-label">Option</label>
+            <div class="col-sm-3">
+                <input type="text" id="@item.Q.Id" name="@item.Q.Id" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-10">
+                <a href="javascript:addOptionbyQuesitonId(@item.Q.Id)" class="btn btn-theme">Add Option</a>
+                <a href="javascript:selectTrueOption(@item.Q.Id)" class="btn btn-theme">Select True Option</a>
+            </div>
+        </div>
+    </form>
+</div>
+    
+
+    }
